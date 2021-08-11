@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <title>Home</title>
+<title>Home</title>
 </head>
 <body>
     <nav id='first-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
@@ -54,8 +51,8 @@
         <div id='nav-logo'>
             <a class="navbar-brand" href="#"></a>
         </div>
-        <h5 class="nav-item">
-            <a class="nav-link" href="donate.html">
+        <h5 class="nav-item d-flex justify-content-start">
+            <a href="donate.html">
                 <span class='donate-container d-flex align-items-center justify-content-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -93,72 +90,63 @@
             </ul>
         </div>  
       </nav>
+  <style>
+ body{
+   background:rgba(133, 133, 133,0.5);
+ }
+@media(max-width:300px){
+    .card{
+      width: 270px !important;
+    }
+    .split-section {
+    margin-top: 10px !important;
+}
+  }
 
+  </style>
+        <div class="alert alert-box hidden alert-success">
+            <strong>Successful!</strong> The Active Foundation Team will get back to you thanks.
+        </div>
+      <section class='volunteer d-flex justify-content-center flex-column'>
+        
+            <div class='card d-flex flex-column'>
+              <br>
+        <h3 data-aos="fade-up-left" class='volunteer-heading d-flex justify-content-center'>Interested in becoming a volunteer?</h3>
+    <br>
+                <form data-aos="fade-up-right" class='form-wrapper '>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address :</label>
+                      <input type="email" name='Email' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name :</label>
+                      <input type="name" name='Name' class="form-control" aria-describedby="nameHelp" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Surname :</label>
+                      <input type="name" name='Surname' class="form-control" aria-describedby="nameHelp" placeholder="Enter your Surname">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Phone Number :</label>
+                      <input type="tel" name='Phone Number' class="form-control" aria-describedby="nameHelp" placeholder="Enter your Surname">
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="initiative">Select a initiative :</label>
 
-      <section id='sow-hope-banner'>
-          <div class='did-you-know'>
-            <h5 class='project-heading d-flex justify-content-center text-light'>Did You Know?</h5>
-            <div class='powerpoints d-flex align-items-center'>
-               <ul>
-                    <li>The proportion of population living below the Lower Bound Poverty Line (2015): 	40.0%
-                        </li>
-                        <br>
-                    <li>Children under 5 were considered short for their age (stunted) : 	27.0% 
-                        </li>
-                        <br>
+                        <select class="form-control" name="initiative" id="initiative">
+                          <option value="Select a initiative :" default>Select a initiative :</option>
+                          <option value="Sow Hope">Saab</option>
+                          <option value="Quality Education">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select> 
+                    </div>
 
-                    <li>Households in South Africa which were multi-dimensionally poor: 	7.0%
-                        </li>
-                        <br>
-
-                    <li>                        
-                        The population using safely managed drinking water services: 	90.2%
-                        </li>
-                        <br>
-
-                    <li>
-                        The percentage of coastal ecosystems that were well protected: 	38%
-                        </li>
-
-                </ul>
-                
+                    <button type="submit" class="btn submit-btn btn-primary">Submit</button>
+                  </form>
             </div>
-          </div>
+           
       </section>
-      <br>
-      <br>
-<h4 class='project-heading d-flex justify-content-center'>Sow Hope</h4>
-
-      <section class='split-section row d-flex align-items-center'>
-        <div class='col-md-6 d-flex justify-content-center'>
-            <div class="swiper-container d-flex mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide ">
-                      <img src='./images/Sliders/01.png' class='slide-img'>
-                  </div>  
-                  <div class="swiper-slide ">
-                      <img src='./images/Sliders/06.png' class='slide-img'>
-                  </div>  
-                  <div class="swiper-slide ">
-                      <img src='./images/Sliders/07.png' class='slide-img'>
-                  </div>  
-                  <div class="swiper-slide ">
-                      <img src='./images/Sliders/18.jpg' class='slide-img'>
-                  </div>  
-                          
-                </div>
-            </div>
-          </div>
-
-          <div class='col-md-6 d-flex justify-content-center'>
-              <div class='section-wording d-flex justify-content-center align-items-center'>During the nationwide lockdown, many South Africans lost their income or may not have received a full salary. For many families, this meant they had to endure many nights without food. As a result , we responded to the lockdown by handing out food parcels. It wasn't long before we realized that our best efforts can not keep up with the rising demand.
-                  <br>
-                  <br>
-                  <br>
-                This is why we started SOW HOPE - a project in which we embark on a mission to guarantee food security. This involves the planting and setting up of vegetable gardens at people`s homes , ensuring self sustainability. </div>
-            </div>
-      </section>
-
       <section class='wave-container'>
         <svg version="1.1" id='wave-svg' xmlns="http://www.w3.org/2000/svg" style='width:99vw'><path id="wave" currentColor='orange' d=""/></svg>
       </section>
@@ -203,27 +191,10 @@
             <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                AOS.init();
              </script>
-             <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            autoPlay: true,
-            loop: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        </script>
             <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
            <script>
                 $('#wave').wavify({
@@ -234,5 +205,19 @@
                speed: .25
              });
            </script>
+                    <script>
+                        let alert = document.querySelector('.alert-box');
+                        let form = document.querySelector('form');
+                        form.addEventListener('submit',(e)=>{
+                            e.preventDefault();
+                            alert.classList.toggle('hidden');
+                        });
+               
+                       //  Toggle Popover
+                           $(document).ready(function(){
+                           $('[data-toggle="popover"]').popover();   
+                           });
+               
+                    </script>
     </body>
     </html>

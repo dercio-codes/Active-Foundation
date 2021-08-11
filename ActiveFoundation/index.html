@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Home</title>
 </head>
 <body>
     <nav id='first-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div id='nav-logo'>
+            <a class="navbar-brand" href="#"></a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About</a>
@@ -45,7 +50,9 @@
         </div>  
       </nav>
       <nav id='second-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div id='nav-logo'>
+            <a class="navbar-brand" href="#"></a>
+        </div>
         <h5 class="nav-item">
             <a class="nav-link" href="donate.html">
                 <span class='donate-container d-flex align-items-center justify-content-center'>
@@ -57,14 +64,18 @@
             </a>
         </h5>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="black" class="bi bi-justify" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+          </span>
         </button>
       
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
            
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About</a>
@@ -78,20 +89,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="donate.html">
-                        <span class='donate-container d-flex align-items-center justify-content-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                              Donate now
-                        </span>
-                    </a>
-                </li>
             </ul>
         </div>  
       </nav>
-
+<style>
+  @media ( max-width:300px){
+	.did-you-know{
+    width:70% !important; 
+  }
+  .section-wording{
+    width:95% !important;
+}
+  }
+</style>
       <section id='banner'>
           <div class='did-you-know'>
             <h5 class='project-heading d-flex justify-content-center' style="color:white">Did You Know?</h5>
@@ -114,14 +124,17 @@
      <br>
      <br>
       <section class='icons d-flex flex-column justify-content-center'>
-          <div class='our-work-container d-flex flex-column'>
+          <div class='our-work-container d-flex flex-column align-items-center justify-content-center'>
             <h4 class='project-heading d-flex justify-content-center'>DISCOVER OUR WORK</h4>
-            <p class='section-wording'>The Active Foundation works with communities, who are the keepers of our natural resources, and other partners. We direct their energy and efforts so that they can be key levers of change for South Africa’s future.</p>
+            <p class='section-wording d-flex align-items-center justify-content-center'>The Active Foundation works with communities, who are the keepers of our natural resources, and other partners. We direct their energy and efforts so that they can be key levers of change for South Africa’s future.</p>
           </div>
-            <div class='icons-container d-flex'>
-                <img src='./icons/1.png' class='the-icon'>
+            <div class='icons-container d-flex justify-content-around'>
+              <img src='./community.svg' class='the-icon'>
+              <img src='./presentation(1).svg' class='the-icon'>
+              <img src='./gardening.png' class='the-icon'>
+                <!-- <img src='./icons/1.png' class='the-icon'>
                 <img src='./icons/2.png' class='the-icon'>
-                <img src='./icons/3.png' class='the-icon'>    
+                <img src='./icons/3.png' class='the-icon'>     -->
             </div>
       </section>
 <br>
@@ -133,91 +146,118 @@
 <br>
 <h4 class='project-heading d-flex justify-content-center'>DISCOVER OUR WORK</h4>
 
-      <section class='split-section row d-flex align-items-center'>
-          <div class='col-md-6 d-flex justify-content-center'>
-              <img src='' class='section-img'>
-          </div>
+<style>
+    .swiper-container {
+	margin-top: 0px !important;
+	width: 80% !important;
+	height: 100% !important;
+  }
 
-          <div data-aos="fade-left" class='col-md-6 d-flex justify-content-center'>
-              <div class='section-wording d-flex justify-content-center align-items-center'>The Active foundation is an NPO serving the community in Johannesburg South. Our vision is to see each person's life change for the better - one person at a time and one block at a time. Our focus areas are Education, the Environment, Leadership Training and Poverty Relief. We believe that if we all join hands, we can accomplish great things and uplift our communities. </div>
-            </div>
-      </section>
-    </section> 
+</style>
+<!-- 
+<div class="swiper-slide d-flex align-items-end justify-content-center">
+    <img src='./images/child.jpg' class='section-img'>
+  </div> -->
+  <section class='split-section row d-flex align-items-center'>
+    <div class='col-md-6 d-flex justify-content-center'>
+      <div class="swiper-container d-flex mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <img src='./images/child.jpg' class='slide-img'>
+            </div>  
+            <div class="swiper-slide">
+              <img src='./images/dark-book.jpg' class='slide-img'>
+          </div>        
+            <div class="swiper-slide">
+              <img src='./images/fist-pump.jpg' class='slide-img'>
+          </div>        
+          </div>
+      </div>
+    </div>
+    
+
+    <div class='col-md-6 d-flex justify-content-center'>
+        <div class='section-wording d-flex justify-content-center align-items-center'>
+          The Active foundation is an NPO serving the community in Johannesburg South. Our vision is to see each person's life change for the better - one person at a time and one block at a time. Our focus areas are Education, the Environment, Leadership Training and Poverty Relief. We believe that if we all join hands, we can accomplish great things and uplift our communities
+          </div>
+      </div>
+</section>
+
     <section class='wave-container'>
         <svg version="1.1" id='wave-svg' xmlns="http://www.w3.org/2000/svg" style='width:99vw'><path id="wave" currentColor='orange' d=""/></svg>
      </section>    
 
-      <footer class="footer-distributed">
- 
-		<div class="footer-left">
- 
-		<img src="./img/active.png" alt="responsive">
- 
-		<p class="footer-links">
-		<a href="#">Home</a>
-        <br>
-		<a href="#">About Us</a>
-        <br>
-		<a href="#">Projects</a>
-        <br>
-		<a href="#">How to Donate</a>
-        <br>
-		<a href="#">Contact Us</a>
-		</p>
- 
-		<p class="footer-company-name">Active Foundations &#169;2021</p>
-		</div>
- 
-		<div class="footer-center">
- 
-		<div>
-		<i class="fa fa-map-marker"></i>
-		<p><span>26A Loveday St, Selby, Johannesburg South , 2000</span></p>
-		</div>
- 
-		<div>
-		<i class="fa fa-phone"></i>
-		<p>011 493 4805</p>
-		</div>
- 
-		<div>
-		<i class="fa fa-envelope"></i>
-		<p><a href="mailto:support@company.com">tonsoflove@activefoundation.co.za</a></p>
-		</div>
- 
-		</div>
- 
-		<div class="footer-right">
- 
-		<p class="footer-company-about"><span></span></p>
- 
-		<div class="footer-icons">
- 
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-youtube"></i></a>
- 
-		</div>
- 
-		</div>
- 
-		</footer>
-     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <footer class="footer-distributed">
+     
+      <div class="footer-left ">
+
+          <img src="./active-logo.png" alt="responsive">
+
+      <p class="footer-company-name">Active Foundation &#169;2021</p>
+      </div>
+
+      <div class="footer-center">
+
+      <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>26A Loveday St South, Selby, Johannesburg South, 2001</span></p>
+      </div>
+
+
+      <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">tonsoflove@activefoundation.co.za</a></p>
+      </div>
+
+      </div>
+
+      <div class="footer-right">
+
+      <p class="footer-company-about"><span></span></p>
+
+      <div class="footer-icons">
+
+          <a href="https://www.facebook.com/tonsofloveaf"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/ctivefoundation"><i class="fa fa-twitter"></i></a>
+         
+      </div>
+
+      </div>
+
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+       </script>
+       <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      autoPlay: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
      <script>
-        AOS.init();
-      </script>
-     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
-    <script>
-         $('#wave').wavify({
-        height: 25,
-        bones: 3,
-        amplitude: 65,
-        color: 'orange',
-        speed: .25
-      });
-    </script>
+          $('#wave').wavify({
+            height: 25,
+             bones: 3,
+             amplitude: 45,
+             color: 'orange',
+             speed: .25
+       });
+     </script>
 </body>
 </html>

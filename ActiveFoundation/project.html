@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title>Home</title>
 </head>
 <body>
-      <nav id='first-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav id='first-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
+        <div id='nav-logo'>
+            <a class="navbar-brand" href="#"></a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About</a>
@@ -45,7 +48,9 @@
         </div>  
       </nav>
       <nav id='second-navbar' class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <div id='nav-logo'>
+            <a class="navbar-brand" href="#"></a>
+        </div>
         <h5 class="nav-item">
             <a class="nav-link" href="donate.html">
                 <span class='donate-container d-flex align-items-center justify-content-center'>
@@ -57,14 +62,18 @@
             </a>
         </h5>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="black" class="bi bi-justify" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+          </span>
         </button>
       
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
            
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About</a>
@@ -78,25 +87,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="donate.html">
-                        <span class='donate-container d-flex align-items-center justify-content-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                              Donate now
-                        </span>
-                    </a>
-                </li>
             </ul>
         </div>  
       </nav>
+      <h1 style="text-decoration: underline;margin-top:20px;" class='project-heading d-flex justify-content-center align-items-center'>
+        Projects
+    </h1>
       
-      <section class='split-section row d-flex align-items-center'>
+      <section class='split-section row d-flex'>
 
-            <div class='col-md-6  d-flex flex-column justify-content-center'>
+            <div class='col-md-6  d-flex flex-column '>
                 <div class='word-container'>
-                    <h3 class='project-heading d-flex'>Zero Hunger - Sow of Hope</h3>
+                    <h3 class='project-heading d-flex justify-content-between align-items-center'>
+                        Zero Hunger - Sow of Hope     
+                        <img src="./images (3).png" class='section-icon ' alt="">
+                    </h3>
                     <div class='section-wording d-flex justify-content-center align-items-center'>During the nationwide lockdown, many South Africans lost their income or may not have received a full salary. For many families, this meant they had to endure many nights without food. As a result , we responded to the lockdown by handing out food parcels. It wasn't long before we realized that our best efforts can not keep up with the rising demand. </div>
                     <span class='read-more d-flex justify-content-end'>
                         <a class='read-more-link' href="sow-hope.html">Read More</a>
@@ -104,26 +109,51 @@
                 </div>
             </div>
 
-            <div class='col-md-6 d-flex justify-content-center'>
-                <img src='./icons/images (3).png' class='section-img'>
+            <div class='col-md-6 d-flex flex-column align-items-end justify-content-around'>
+                <img style='width:auto' src='./images/pexels-lukas-296230.jpg' class='section-img d-flex align-items-center justify-content-center'>
             </div>
   
       </section>
 <br>
-
+<style>
+    /* .split-section > .col-md-6 > img{
+        margin-top:50px;
+    } */
+    .section-icon{
+        width:70px;
+        height:70px;
+        background:pink;
+        /* position:absolute; */
+        /* left:90; */
+    }
+    @media(max-width:400px){
+        .section-img{
+            height:300px !important;
+            width:250px !important;
+        }
+        .section-icon{
+            margin-top: 200px;
+        }
+        .col-md-6{
+		width:100% !important;
+		height: 450px !important;
+	 }
+    }
+</style>
 <br>
       <section class='split-section row d-flex align-items-center' id='second-project'>
-            <div class='col-md-6 d-flex justify-content-center'>
-                <img src='./icons/sdf-12.png' class='section-img'>
+            <div class='col-md-6 d-flex flex-column align-items-end justify-content-around'>
+                <img src='./images/Tons.jpg' class='section-img d-flex align-items-center justify-content-center'>
             </div>
             <div class='col-md-6 d-flex flex-column justify-content-center'>
                <div class='word-container'>
-                    <h3 class='project-heading d-flex justify-content-center'>Tons of Love</h3>
+                    <h3 class='project-heading d-flex justify-content-between align-items-center'>
+                        <img src="./sgd.png" class='section-icon d-flex align-items-center justify-content-center' alt="">
+                        Tons of Love
+                    </h3>
                     <div class='section-wording d-flex justify-content-center align-items-center'>One of the focus areas of the Active Foundation is poverty relief. This is very close to our hearts because many people we work with are living below the bread line and many hard-working South Africans struggle to make an honest living. Thus we are constantly on the lookout for what we can do to better the lives of those less fortunate. </div>
                     <span class='read-more d-flex justify-content-end'>
-                        <a class='read-more-link' href="sow-hope.html">Read More</a>
-
-                        
+                        <a class='read-more-link' href="tons-of-love.html">Read More</a>
                     </span>
                </div>
             </div>
@@ -135,7 +165,9 @@
 
             <div class='col-md-6 d-flex flex-column justify-content-center'>
                 <div class='word-container'>
-                    <h3 class='project-heading d-flex justify-content-center'>Quality Education - Leadership academy</h3>
+                    <h3 class='project-heading d-flex justify-content-between align-items-center'>Quality Education 
+                        <img src="./images (4).png" class='section-icon d-flex align-items-center justify-content-center' alt="">
+                    </h3>
                     <div class='section-wording d-flex justify-content-center align-items-center'>The Leadership Academy aims to strengthen leadership structures. The curriculum is based on the Dream Team Series - which focuses on the development of a team as opposed to an individualistic mindset. Topics include good communication skills, casting vision and assessing progress. This is available to both student leadership bodies and teachers. </div>
                     <span class='read-more d-flex justify-content-end'>
                         <a style='font-weight:600;' class='read-more-link' href="quality-education.html">Read More
@@ -144,85 +176,68 @@
                 </div>
             </div>
 
-            <div class='col-md-6 d-flex justify-content-center'>
-                <img data-aos="fade-left" src='./icons/images (4).png' class='section-img'>
+            <div class='col-md-6 d-flex flex-column align-items-end justify-content-around'>
+                <img data-aos="fade-left" style="width:auto" src='./images/quality.jpg' class='section-img d-flex align-items-center justify-content-center'>
             </div>
   
       </section>
       <section class='wave-container'>
-        <svg version="1.1" id='wave-svg' xmlns="http://www.w3.org/2000/svg" style='width:99vw'><path id="wave" currentColor='#292c2f' d=""/></svg>
-     </section> 
-      <footer class="footer-distributed">
- 
-		<div class="footer-left">
- 
-		<img src="./img/active.png" alt="responsive">
- 
-		<p class="footer-links">
-		<a href="#">Home</a>
-        <br>
-		<a href="#">About Us</a>
-        <br>
-		<a href="#">Projects</a>
-        <br>
-		<a href="#">How to Donate</a>
-        <br>
-		<a href="#">Contact Us</a>
-		</p>
- 
-		<p class="footer-company-name">Active Foundations &#169;2021</p>
-		</div>
- 
-		<div class="footer-center">
- 
-		<div>
-		<i class="fa fa-map-marker"></i>
-		<p><span>26A Loveday St, Selby, Johannesburg South , 2000</span></p>
-		</div>
- 
-		<div>
-		<i class="fa fa-phone"></i>
-		<p>011 493 4805</p>
-		</div>
- 
-		<div>
-		<i class="fa fa-envelope"></i>
-		<p><a href="mailto:support@company.com">tonsoflove@activefoundation.co.za</a></p>
-		</div>
- 
-		</div>
- 
-		<div class="footer-right">
- 
-		<p class="footer-company-about"><span></span></p>
- 
-		<div class="footer-icons">
- 
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-youtube"></i></a>
- 
-		</div>
- 
-		</div>
- 
-		</footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-           AOS.init();
-         </script>
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
-       <script>
-            $('#wave').wavify({
-           height: 25,
-           bones: 3,
-           amplitude: 65,
-           color: '#292c2f',
-           speed: .25
-         });
-       </script>
-</body>
-</html>
+        <svg version="1.1" id='wave-svg' xmlns="http://www.w3.org/2000/svg" style='width:99vw'><path id="wave" currentColor='orange' d=""/></svg>
+      </section>
+          <footer class="footer-distributed">
+     
+            <div class="footer-left ">
+     
+                <img src="./active-logo.png" alt="responsive">
+
+            <p class="footer-company-name">Active Foundation &#169;2021</p>
+            </div>
+     
+            <div class="footer-center">
+     
+            <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>26A Loveday St South, Selby, Johannesburg South, 2001</span></p>
+            </div>
+    
+     
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">tonsoflove@activefoundation.co.za</a></p>
+            </div>
+     
+            </div>
+     
+            <div class="footer-right">
+     
+            <p class="footer-company-about"><span></span></p>
+     
+            <div class="footer-icons">
+     
+                <a href="https://www.facebook.com/tonsofloveaf"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/ctivefoundation"><i class="fa fa-twitter"></i></a>
+               
+            </div>
+     
+            </div>
+     
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+               AOS.init();
+             </script>
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+           <script>
+                $('#wave').wavify({
+               height: 25,
+               bones: 3,
+               amplitude: 55,
+               color: 'orange',
+               speed: .25
+             });
+           </script>
+    </body>
+    </html>
